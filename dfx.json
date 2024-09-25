@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "Calci_backend": {
+      "main": "src/Calci_backend/main.mo",
+      "type": "motoko"
+    },
+    "Calci_frontend": {
+      "dependencies": [
+        "Calci_backend"
+      ],
+      "source": [
+        "src/Calci_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Calci_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
